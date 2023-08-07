@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=800 height=450></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/NeonT.loader.js";
       var config = {
-        dataUrl: buildUrl + "/NeonT.data.br",
-        frameworkUrl: buildUrl + "/NeonT.framework.js.br",
-        codeUrl: buildUrl + "/NeonT.wasm.br",
+        dataUrl: buildUrl + "/NeonT.data.gz",
+        frameworkUrl: buildUrl + "/NeonT.framework.js.gz",
+        codeUrl: buildUrl + "/NeonT.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Neon Troubleshooters",
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "800px";
+        canvas.style.height = "450px";
       }
 
       loadingBar.style.display = "block";
